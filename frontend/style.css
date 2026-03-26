@@ -1,0 +1,162 @@
+body {
+  font-family: 'Segoe UI', Arial;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1f2937;
+  color: white;
+}
+
+.navbar h1 { margin: 0; }
+
+nav button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  background: #374151;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav button:hover { background: #4b5563; }
+
+
+.container { padding: 30px; }
+
+
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.card h3 { margin-bottom: 10px; color: #6b7280; }
+.card p { font-size: 22px; font-weight: bold; }
+
+
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  min-width: 150px;
+}
+
+
+button {
+  padding: 10px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+
+ul { list-style: none; padding: 0; margin-top: 15px; }
+
+li {
+  background: white;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+li .acoes {
+  display: flex;
+  gap: 10px;
+}
+
+li .acoes .editar { background: #2563eb; }
+li .acoes .editar:hover { background: #1d4ed8; }
+
+li .acoes .excluir { background: #ef4444; }
+li .acoes .excluir:hover { background: #dc2626; }
+
+
+.form-venda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center; /* centraliza verticalmente todos os elementos */
+}
+
+.form-venda select,
+.form-venda input,
+.form-venda button.adicionar {
+  height: 40px; /* mesma altura para todos */
+  box-sizing: border-box;
+}
+
+.form-venda .campo label {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.form-venda button.adicionar {
+  background: #10b981;
+  color: white;
+}
+
+.form-venda button.adicionar:hover { background: #059669; }
+
+#listaItens li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listaItens li button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#listaItens li button:hover { background: #dc2626; }
+
+
+.resumo-venda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.resumo-venda span { font-size: 18px; }
+
+.resumo-venda button.finalizar {
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.resumo-venda button.finalizar:hover { background: #1d4ed8; }
